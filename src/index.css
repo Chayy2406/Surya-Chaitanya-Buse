@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fancy-font {
+  font-family: "Ysabeau SC", sans-serif;
+  letter-spacing: 1px;
+}
+
+@keyframes floatingCode {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7; /* Increased the mid-point opacity from 0.5 to 0.7 */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
+
+.code-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.code-element {
+  position: absolute;
+  color: rgba(51, 255, 119, 0.7); /* Increased opacity from 0.5 to 0.7 */
+  font-family: monospace;
+  animation: floatingCode 15s linear infinite;
+  text-shadow: 0 0 5px rgba(51, 255, 119, 0.3); /* Added glow effect */
+}
+
+* {
+  cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto !important;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes rippleIntense {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.lightsaber-glow {
+  filter: drop-shadow(0 0 2px rgba(51, 255, 119, 0.7))
+    drop-shadow(0 0 4px rgba(51, 255, 119, 0.4));
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+@keyframes subtlePulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 2px rgba(51, 255, 119, 0.7))
+      drop-shadow(0 0 4px rgba(51, 255, 119, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 3px rgba(51, 255, 119, 0.8))
+      drop-shadow(0 0 5px rgba(51, 255, 119, 0.5));
+  }
+}
+
+@font-face {
+  font-family: "Impact";
+  src: local("Impact");
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch-effect {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+@keyframes glitch {
+  0%,
+  88%,
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  89% {
+    transform: translate(-10px, 5px);
+    opacity: 0.75;
+  }
+  91% {
+    transform: translate(10px, -5px);
+    opacity: 0.75;
+  }
+  93% {
+    transform: translate(-8px, 0);
+    opacity: 0.75;
+  }
+  95% {
+    transform: translate(8px, 5px);
+    opacity: 0.75;
+  }
+  97% {
+    transform: translate(0);
+    opacity: 0.75;
+  }
+}
+
+@keyframes glitch-color {
+  0%,
+  88%,
+  100% {
+    transform: translate(0);
+    color: white;
+  }
+  89% {
+    transform: translate(-10px, 5px);
+    color: #ff00ff;
+  }
+  91% {
+    transform: translate(10px, -5px);
+    color: #00ffff;
+  }
+  93% {
+    transform: translate(-8px, 0);
+    color: #ff1493;
+  }
+  95% {
+    transform: translate(8px, 5px);
+    color: #00bfff;
+  }
+  97% {
+    transform: translate(0);
+    color: white;
+  }
+}
+
+@keyframes writing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.handwriting {
+  font-family: "Caveat", cursive;
+}
+
+.writing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: writing 4s steps(50, end);
+}
+
