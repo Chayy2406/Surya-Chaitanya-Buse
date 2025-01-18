@@ -80,7 +80,7 @@ function App() {
           {/* Main content */}
           <div className="flex-grow flex flex-col justify-center mt-52">
             <div className="overflow-hidden">
-              <h1 className="text-[2.8rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[6rem] leading-tight font-bold mb-4 typing-animation hover:text-black hover:bg-white transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer w-full md:w-3/4">
+              <h1 className="text-[2.8rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[6rem] leading-tight font-bold mb-4 typing-animation hover:text-black hover:bg-white transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer w-full whitespace-normal break-words">
                 {text}
               </h1>
             </div>
