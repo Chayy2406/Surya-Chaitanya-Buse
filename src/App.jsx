@@ -116,7 +116,7 @@ function App() {
               </div>
             </div> */}
 
-            {/* Tagline */}
+            {/* Tagline
             <div className="mt-12 opacity-0 animate-[fadeIn_1s_ease-in_forwards_4.5s]">
               <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-[#33ff77]/50 hover:shadow-[0_0_30px_rgba(51,255,119,0.2)] cursor-default">
                 <div className="overflow-hidden">
@@ -146,7 +146,42 @@ function App() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            {/* Tagline */}
+<div className="mt-12 opacity-0 animate-[fadeIn_1s_ease-in_forwards_4.5s] w-full">
+  <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-[#33ff77]/50 hover:shadow-[0_0_30px_rgba(51,255,119,0.2)] cursor-default">
+    <div className="overflow-hidden w-full">
+      <p 
+        className="text-sm sm:text-lg md:text-2xl lg:text-3xl text-[#33ff77] writing-animation break-words whitespace-normal w-full" 
+        style={{ 
+          fontFamily: 'Lato, sans-serif', 
+          letterSpacing: '0.5px', 
+          fontWeight: 300,
+          lineHeight: '1.4'
+        }}
+      >
+        Crafting Seamless{' '}
+        <span className="inline">WEB EXPERIENCES</span>{' '}
+        <span className="inline">&</span>{' '}
+        <span className="inline">SMARTER MACHINES</span>
+      </p>
+    </div>
+    <div className="overflow-hidden mt-2">
+      <p 
+        className="text-xs sm:text-base md:text-xl lg:text-2xl text-gray-400 writing-animation" 
+        style={{ 
+          fontFamily: 'Lato, sans-serif', 
+          letterSpacing: '1px', 
+          fontWeight: 300, 
+          animationDelay: '4s' 
+        }}
+      >
+        – One Line of Code at a Time –
+      </p>
+    </div>
+  </div>
+</div>
 
 
           </div>
