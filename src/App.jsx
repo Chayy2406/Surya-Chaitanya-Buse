@@ -80,19 +80,21 @@ function App() {
           {/* Main content */}
           <div className="flex-grow flex flex-col justify-center mt-52">
             <div className="overflow-hidden">
-              <h1 className="text-[2.8rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[6rem] leading-tight font-bold mb-4 typing-animation hover:text-black hover:bg-white transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer w-full whitespace-normal break-words">
+              <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[6rem] leading-tight font-bold mb-4 typing-animation hover:text-black hover:bg-white transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer break-words">
                 {text}
               </h1>
             </div>
-            <h2 className="text-xl md:text-2xl lg:text-2xl text-gray-300 opacity-0 animate-[fadeIn_1s_ease-in_forwards_3.5s] mt-4">
+            <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 opacity-0 animate-[fadeIn_1s_ease-in_forwards_3.5s] mt-4 flex flex-col sm:flex-row sm:items-center gap-2">
               <span className="hover:text-black hover:bg-white hover:scale-110 transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer">
                 UI/UX Designer
               </span>
-              {" | "}
+              {/* {" | "} */}
+              <span className="hidden sm:inline">|</span>
               <span className="hover:text-black hover:bg-white hover:scale-110 transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer">
                 Full-Stack Developer
               </span>
-              {" | "}
+              {/* {" | "} */}
+              <span className="hidden sm:inline">|</span>
               <span className="hover:text-black hover:bg-white hover:scale-110 transition-all duration-300 inline-block hover:px-2 hover:border-2 hover:border-white cursor-pointer">
                 AI & Machine Learning Enthusiast
               </span>
