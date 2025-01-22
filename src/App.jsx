@@ -193,7 +193,7 @@ function App() {
     Based in Tempe, AZ
   </p>
   <a 
-    href="https://drive.google.com/file/d/1g8qKuT0AWuTir32hPSIwbxhS_QMoKc1h/view?usp=sharing" 
+    href="https://drive.google.com/file/d/1aFFUWPe1MReJHBV5gROQkF4Sh0LrrSns/view?usp=sharing" 
     target="_blank" 
     rel="noopener noreferrer"
     className="text-xl opacity-0 animate-[fadeIn_1s_ease-in_forwards_4s] resume-btn px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 hover:bg-[#33ff77]/20 cursor-pointer"
