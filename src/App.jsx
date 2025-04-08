@@ -405,7 +405,7 @@ function App() {
     {/* Project Card */}
     <div className="space-y-8 md:space-y-16">
     <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(51,255,119,0.2)] mb-16">
-      <a href="https://wanderlust-travel-cyan.vercel.app/" 
+      <a href="https://wanderlust-chay.vercel.app/" 
       target="_blank" 
       rel="noopener noreferrer" 
       className="cursor-pointer"
